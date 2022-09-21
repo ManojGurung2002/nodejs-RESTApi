@@ -202,6 +202,9 @@ const jsonData = [
       "Info": ""
     }]
 
+app.get("/", (req, res) => {
+  res.send("Hello, You can get Students list by navigating to /students")
+})
 
 app.get("/students", (req, res) => {
     res.json(jsonData);
